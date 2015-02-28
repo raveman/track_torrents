@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
+  captcha_route
+  resources :path_mappers
+
   root 'static_pages#home'
 
-  devise_for :users
+  devise_for :users, path: "auth", path_names: { sign_in: 'login', sign_out: 'logout', psign_up: 'register' }
 
   resources :urls
 

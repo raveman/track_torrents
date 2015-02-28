@@ -28,6 +28,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'devise'
+gem 'devise_security_extension'
+gem 'easy_captcha'
+gem 'rails_email_validator'
+
 gem 'bootstrap-sass'
 gem 'bootstrap-form'
 
