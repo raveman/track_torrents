@@ -1,0 +1,25 @@
+<%= form_for(@path_mapper) do |f| %>
+  <% if @path_mapper.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@path_mapper.errors.count, "error") %> prohibited this path_mapper from being saved:</h2>
+
+      <ul>
+      <% @path_mapper.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :path %><br>
+    <%= f.text_field :path %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

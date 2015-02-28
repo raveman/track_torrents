@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @path_mapper.title %>
+</p>
+
+<p>
+  <strong>Path:</strong>
+  <%= @path_mapper.path %>
+</p>
+
+<%= link_to 'Edit', edit_path_mapper_path(@path_mapper) %> |
+<%= link_to 'Back', path_mappers_path %>
